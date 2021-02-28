@@ -2,9 +2,9 @@ import React from 'react';
 import {Image, ImageBackground, StyleSheet, Text, View} from 'react-native';
 import colors from '../config/colors';
 
-import AppText from '../components/AppText';
 import AppButton from '../components/AppButton';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+
+
 
 function WelcomeScreen(props) {
   return (
