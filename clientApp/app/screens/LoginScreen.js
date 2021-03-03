@@ -13,7 +13,7 @@ const validationSchema = Yup.object().shape({
   password: Yup.string().required().min(4).label('Password'),
 });
 
-function LoginScreen(props) {
+function LoginScreen({navigation}) {
   return (
     <Screen style={styles.container}>
       <AppForm
@@ -49,7 +49,7 @@ function LoginScreen(props) {
             New User{' '}
             <AppText
               style={styles.regsiterLink}
-              onPress={() => console.log('regsiter')}>
+              onPress={() => navigation.navigate('Register')}>
               Register
             </AppText>
           </AppText>
@@ -65,8 +65,8 @@ const styles = StyleSheet.create({
     width: 80,
     height: 80,
     alignSelf: 'center',
-    marginTop: 50,
-    marginBottom: 20,
+    marginTop: 30,
+    marginBottom: 10,
   },
   newUser: {
     color: colors.medium,

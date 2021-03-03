@@ -4,10 +4,6 @@ import {Platform, StyleSheet, TextInput, View} from 'react-native';
 import colors from '../config/colors';
 import defaultStyles from '../config/styles';
 
-// Import and use icons here
-// import {Icon} from 'react-native-elememts';
-// import {} from 'react-native-vector-icons';
-
 function AppTextInput({icon, ...otherProps}) {
   return (
     <View style={styles.container}>
@@ -23,7 +19,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     flexDirection: 'row',
     width: '100%',
-    padding: 15,
+    padding: 10,
     marginVertical: 10,
   },
   icon: {marginRight: 10},

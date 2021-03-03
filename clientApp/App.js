@@ -1,18 +1,13 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import AppTextInput from './app/components/AppTextInput';
-import Screen from './app/components/Screen';
-import LoginScreen from './app/screens/LoginScreen';
-import WelcomeScreen from './app/screens/WelcomeScreen';
+import {NavigationContainer} from '@react-navigation/native'
 
+import AuthNavigator from './app/navigation/AuthNavigator';
 
-const App = () => {
-  return (
-    // <Screen/>
-    // <WelcomeScreen/>
-    <LoginScreen/>
-  );
-};
+const App = () => (
+ <NavigationContainer>
+   <AuthNavigator/>
+ </NavigationContainer>
+);
 
 
 export default App;
